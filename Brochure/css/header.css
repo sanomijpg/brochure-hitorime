@@ -1,0 +1,142 @@
+header {
+    position: relative;
+}
+
+
+
+.top-header {
+    background-color: #008cd4;
+}
+
+.top-header .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 54px;
+    margin: 0 auto;
+}
+
+.top-header .inner .site-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.top-header .inner .header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    margin: 0 10px;
+}
+
+
+
+
+
+.bot-header {
+    background-color: #f1f1f1;
+}
+
+.bot-header .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 54px;
+    margin: 0 auto;
+}
+
+.bot-header .inner .site-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.bot-header .inner .navigation-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    margin: 0 10px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .top-header .inner {
+        min-height: 62px;
+        height: 12vw;
+    }
+
+    .top-header .inner .site-logo {
+        width: 100%;
+    }
+
+    .top-header .inner .header-menu {
+        display: none;
+    }
+
+    .bot-header {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 414px) {
+
+    .top-header .inner {
+        min-height: 55px;
+        height: 18vw;
+    }
+
+    .top-header .inner .site-logo {
+        width: 100%;
+    }
+
+    .top-header .inner .header-menu {
+        display: none;
+    }
+
+    .bot-header {
+        display: none;
+    }
+}
+
+
+
+
+
+.inner {
+    border: 1px solid #000;
+}
+
+.site-logo, .header-menu {
+    background-color: palevioletred;
+}
+
+.site-title, .navigation-menu {
+    background-color: greenyellow;
+}
+
+.site-logo img, .site-logo span,
+.header-menu li {
+    width: 70px;
+    height: 40px;
+    border: 2px solid #000;
+}
+
+.site-title span,
+.navigation-menu li {
+    width: 70px;
+    height: 40px;
+    border: 2px solid #000;
+}
